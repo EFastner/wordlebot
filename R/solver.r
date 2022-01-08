@@ -1,4 +1,5 @@
-# @export
+#' @importFrom magrittr %>%
+#' @export
 solve_wordle <- function(){
   is_solved <- "n"
   allowed_letters <- ""
