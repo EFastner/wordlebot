@@ -1,12 +1,13 @@
 Package: wordlebot
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Interact with Wordle
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: person("Eric", "Fastner", "eric.fastner@gmail.com", role = c("aut", "cre"))
+Maintainer: Eric Fastner <eric.fastner@gmail.com>
+Description: This package is used to interact with the wordle web app. Also contains the full word lists for reference.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
+Imports:
+  magrittr
