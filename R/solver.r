@@ -68,7 +68,13 @@ solve_wordle <- function(){
         possible_answers <-
           possible_answers %>%
           grep(
-            pattern = paste0(allowed_letters, collapse = ""),
+            pattern =
+              paste0(
+              "^(?=.*",
+              paste0(
+                strsplit(allowed_letters, split = "") %>% unlist(),
+                collapse = ")(?=.*"),
+              ").*$"),
             x = .,
             value = TRUE,
             perl = TRUE,
